@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+html {
+    font-family: 'Lexend', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#gear {
+    color: rgb(206, 226, 234);
+    font-size: 9vh;
+    position: absolute;
+    top: 15px;
+    right: 240px;
+}
+
+#gear:hover {
+    color: rgb(183, 202, 209);
+}
+
+
+@media only screen and (min-width: 800px){
+
+html {
+    background-image: url(../Images/BackgroundHome.jpg);
+    color: white;
+    background-size: cover;
+}
+
+#contact {
+    color: rgb(206, 226, 234);
+    font-size: 9vh;
+    position: absolute;
+    right: 180px;
+}
+
+#contact:hover {
+    color: rgb(183, 202, 209);
+}
+
+#VAHome {
+    width: 300px;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#section-r {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#section-r > p {
+    color: #01689b;
+}
+
+#section-l > p{
+    font-size: 1.5vw;
+    margin-left: 20px;
+}
+
+#pijl {
+    display: none;
+}
+
+h2 {
+    font-size: 3vw;
+    font-family: 'Lexend';
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 100px;
+    margin-top: 175px;
+    margin-bottom: 4vh;
+    margin-left: 20px;
+}
+
+#RO-logo {
+    width: 100px;
+    height: 200px;
+    margin-right: 50px;
+}
+
+}
+
+@media only screen and (max-width: 799.9px){
+    body {
+        background-color: rgb(206, 226, 234);
+    }
+
+    header {
+        background-color: #EDFFFE;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    #contact {
+        color: rgb(206, 226, 234);
+        font-size: 100px;
+        position: absolute;
+        right: 10px;
+    }
+    
+    #contact:hover {
+        color: rgb(167, 186, 193);
+        text-shadow: 1px 1px black;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #section-1, #section-r {
+        display: flex;
+        color: #01689b;
+        max-width: 70vw;
+    }
+
+    h1 {
+        font-size: 60px;
+        color: #01689b;
+        margin-left: 20px;
+    }
+
+    h2 {
+        color:#01689b;
+        max-width: 90%;
+        font-size: 2rem;
+    }
+
+    #section-l > p {
+        display: none;
+    }
+
+    #VAHome {
+        width: 200px;
+    }
+
+    #RO-logo {
+        position: absolute;
+        width: 50px;
+        height: 100px;
+    }
+
+    #pijl {
+        font-size: 70px;
+        margin-right: 20px;
+    }
+}

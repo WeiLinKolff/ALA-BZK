@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+html {
+    font-family: Lexend;
+}
+
+header {
+    display: flex;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+#ch1 {
+    color:#465471;
+    font-size: 3rem;
+    margin-left: 2vw;
+}
+
+#sds {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input {
+    border-radius: 8px;
+    border: rgb(206, 202, 202) solid 1px;
+    width: 40vw;
+    margin-left: 6.5vw;
+}
+
+#naam, #email {
+    height: 25px;
+}
+
+#omschrijf {
+    height: 200px;
+}
+
+#verzenden {
+    display: flex;
+    align-self: flex-end;
+    margin-top: 15px;
+    margin-right: 6.5vw;
+    border-radius: 12px;
+    color: white;
+    background-color: #465471;
+    padding: 5px 15px;
+    font-family: Lexend;
+    font-size: 1rem;
+}
+
+#verzenden:hover {
+    background-color: #C1DDDC;
+    color: #465471;
+}
+
+#fill {
+    display: flex;
+    width: 45%;
+    align-self: flex-end;
+    align-content: end;
+    right: 0;
+    position: relative;
+}
+
+#ch3 {
+    color: #5B6C90;
+    text-align: right;
+    position: absolute;
+    top: 10vh;
+    right: 80px;
+    text-shadow: 4px 4px #C1DDDC;
+    font-size: x-large;
+    max-width: 28vw;
+}
+
+/*#fillimg {
+    width: 300px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+    
+}
+
+#block {
+    z-index: 1;
+    background-color: #C1DDDC;
+    width: 20vw;
+    height: 20vw;
+    position: fixed;
+    right: 75px;
+    bottom: 75px;
+}
+
+#qblock {
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #465471;
+    width: 20vw;
+    height: 20vw;
+    font-size: 12rem;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+*/
+
+#imgq {
+    position: fixed;
+    width: 25vw;
+    right: 0;
+    bottom: 0;
+}
+
+#qblock > p {
+    color: #5B6C90;
+}
+
+    #contactform {
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+        left: 0;
+    }
+    
+    #contactform > p {
+        margin-left: 7vw;
+    }
+
+
+@media screen and(max-width: 799.9px){
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sds {
+        width: 100%;
+        align-items: center;
+    }
+
+    #contactform {
+        width: 90%;
+        text-align: center;
+    }
+
+    #fill {
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+}
